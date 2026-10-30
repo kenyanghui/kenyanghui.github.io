@@ -174,47 +174,28 @@ img { display:block; max-width:100%; }
 .loop-note a { color:#7FD1FF; font-weight:600; }
 
 /* ===== PHONE ===== */
-.phone-grid { display:grid; grid-template-columns:1.05fr .95fr; gap:60px; align-items:center; }
-.phone-copy .lead { font-size:16.5px; color:var(--text-dim); margin:18px 0 26px; }
-.phone-copy .lead b { color:var(--text); }
+.phone-head { max-width:860px; margin:0 auto 40px; text-align:center; }
+.phone-head .lead { font-size:16.5px; color:var(--text-dim); margin:18px auto 24px; max-width:720px; }
+.phone-head .lead b { color:var(--text); }
+.phone-head .kicker { display:inline-block; }
+.phone-specs { display:flex; flex-wrap:wrap; gap:8px; justify-content:center; }
+.phone-specs span { font-size:12px; padding:6px 12px; border-radius:999px; border:1px solid var(--line); color:var(--text-dim); background:rgba(255,255,255,.03); }
+.phone-hero { margin:0 0 20px; position:relative; border-radius:20px; overflow:hidden; border:1px solid var(--line); box-shadow:0 34px 90px rgba(0,0,0,.55); }
+.phone-hero img { display:block; width:100%; }
+.phone-hero figcaption { position:absolute; inset:auto 18px 18px 18px; display:flex; justify-content:space-between; gap:10px; pointer-events:none; }
+.phone-hero .pc-1, .phone-hero .pc-2 { padding:9px 15px; border-radius:10px; font-size:12.5px; font-weight:700;
+  background:rgba(13,21,38,.82); border:1px solid rgba(255,255,255,.14); backdrop-filter:blur(8px); }
+.phone-strip { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+.phone-strip figure { margin:0; border:1px solid var(--line); border-radius:16px; overflow:hidden; background:rgba(255,255,255,.02); transition:.3s; }
+.phone-strip figure:hover { transform:translateY(-4px); border-color:rgba(239,104,52,.4); }
+.phone-strip img { width:100%; display:block; }
+.phone-strip figcaption { padding:13px 16px; font-size:13px; color:var(--text-dim); border-top:1px solid var(--line); }
 .phone-points { list-style:none; display:grid; gap:14px; }
+.phone-points-3 { grid-template-columns:repeat(3,1fr); margin-top:36px; }
 .phone-points li { border:1px solid var(--line); border-left:3px solid var(--orange); border-radius:11px; padding:15px 18px; background:rgba(255,255,255,.02); transition:.25s; }
 .phone-points li:hover { border-left-color:var(--orange-2); transform:translateX(4px); }
 .phone-points b { display:block; font-size:15.5px; margin-bottom:3px; }
 .phone-points span { font-size:13.5px; color:var(--text-dim); }
-
-.phone-visual { display:flex; justify-content:center; position:relative; padding:20px 0; }
-.phone3d {
-  width:290px; height:590px; border-radius:44px; position:relative;
-  background:#05080F; border:2px solid #2A3654; padding:14px;
-  box-shadow:0 40px 100px rgba(0,0,0,.6), inset 0 0 0 1px rgba(255,255,255,.04);
-  transform:rotate(-2deg);
-}
-.phone-screen { height:100%; border-radius:32px; overflow:hidden; background:var(--night-2);
-  display:flex; flex-direction:column; padding:20px 16px; gap:11px; position:relative; }
-.phone-glint { position:absolute; top:0; left:18%; right:18%; height:26%; border-radius:0 0 50% 50%;
-  background:linear-gradient(180deg, rgba(255,255,255,.06), transparent); pointer-events:none; }
-.app-head { display:flex; align-items:center; gap:10px; margin-top:14px; }
-.app-logo { width:38px; height:38px; border-radius:10px; background:var(--grad); color:#1a1207;
-  display:flex; align-items:center; justify-content:center; font-weight:800; font-size:15px; }
-.app-name { font-size:14.5px; font-weight:700; }
-.app-card { background:var(--night-3); border:1px solid var(--line); border-radius:14px; padding:14px; }
-.app-card-title { font-size:12.5px; color:var(--text-dim); display:flex; justify-content:space-between; }
-.app-card-title b { color:#5CE0A0; font-size:16px; }
-.app-bars { display:flex; align-items:flex-end; gap:7px; height:54px; margin-top:10px; }
-.app-bars i { flex:1; background:var(--grad); border-radius:3px 3px 0 0; opacity:.85; animation:grow 1.2s ease-out; }
-@keyframes grow { from{height:4px} }
-.app-row { display:flex; align-items:center; gap:8px; font-size:12px; color:var(--text-dim);
-  background:rgba(255,255,255,.03); border:1px solid var(--line); border-radius:9px; padding:9px 11px; }
-.dot { width:7px; height:7px; border-radius:50%; flex-shrink:0; }
-.dot.ok { background:#5CE0A0; } .dot.warn { background:#FEBC2E; }
-.app-cta { margin-top:auto; text-align:center; padding:13px; border-radius:11px; background:var(--grad); color:#1a1207; font-weight:800; font-size:14px; }
-.app-foot { text-align:center; font-size:10.5px; color:#5A6A8C; }
-.phone-chip { position:absolute; padding:9px 15px; border-radius:10px; font-size:12.5px; font-weight:700;
-  background:rgba(17,27,49,.94); border:1px solid var(--line); backdrop-filter:blur(8px); }
-.pc-1 { top:9%; left:-4%; border-color:rgba(239,104,52,.5); animation:float2 6.5s ease-in-out infinite; }
-.pc-2 { bottom:12%; right:-6%; border-color:rgba(0,146,212,.55); animation:float2 7s ease-in-out infinite .6s; }
-
 /* ===== FDE ===== */
 .fde-steps { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
 .fde-step { border:1px solid var(--line); border-radius:16px; padding:28px 24px; background:rgba(255,255,255,.02); transition:.3s; }
@@ -256,7 +237,7 @@ img { display:block; max-width:100%; }
   .hero-inner { grid-template-columns:1fr; gap:44px; }
   .hero h1 { font-size:38px; }
   .hero-visual { max-width:560px; margin:0 auto; }
-  .phone-grid { grid-template-columns:1fr; gap:50px; }
+  .phone-points-3 { grid-template-columns:1fr; }
   .fde-steps { grid-template-columns:1fr; }
   .gates-visual { grid-template-columns:repeat(2,1fr); }
   .case-notes { grid-template-columns:1fr; }
@@ -277,8 +258,8 @@ img { display:block; max-width:100%; }
   .section-head h2 { font-size:27px; }
   .case-cell b { font-size:34px; }
   .gates-visual { grid-template-columns:1fr; }
-  .phone3d { width:258px; height:530px; }
-  .pc-1 { left:-2%; } .pc-2 { right:-2%; }
+  .phone-strip { grid-template-columns:1fr; }
+  .phone-hero figcaption { inset:auto 10px 10px 10px; }
   .chip-2 { left:-6px; }
   .email-big { font-size:20px; }
 }
@@ -288,5 +269,5 @@ img { display:block; max-width:100%; }
 .reveal.visible { opacity:1; transform:none; }
 @media (prefers-reduced-motion: reduce) {
   .reveal { opacity:1; transform:none; transition:none; }
-  .terminal, .hero-chip, .phone-chip { animation:none; }
+  .terminal, .hero-chip { animation:none; }
 }
