@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Loong 玄龙 — 把 AI 的 Demo，变成企业的生产系统</title>
-<meta name="description" content="Loong 玄龙：AI 软件工程底座 + 企业定制手机交付。工作流铁律、证据链门禁、事故复盘立法，帮 FDE 伙伴把 agent 做出的 MVP 严谨落地到企业生产环境。">
-<meta property="og:title" content="Loong 玄龙 — AI 软件工程底座">
-<meta property="og:description" content="不守规矩就过不去的门。工作流 + 定制手机交付，让 FDE 的 demo 变成能验收的生产系统。">
+<title>Loong 玄龙 — 让 AI 真正落地的软件工程底座</title>
+<meta name="description" content="Loong 玄龙：AI 软件工程底座 + 企业定制手机交付。三个产品已在大客户真实环境运行：Loong 引擎、LoongBuddy 工作台、LoongHarness 评审工作台。合作洽谈：554176937@qq.com">
+<meta property="og:title" content="Loong 玄龙 — 让 AI 真正落地的软件工程底座">
+<meta property="og:description" content="三个产品真实运行 · 企业定制手机交付 · 合作: 554176937@qq.com">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.aibay.asia/">
 <meta property="og:image" content="https://www.aibay.asia/assets/loong-logo-256.png">
@@ -23,16 +23,13 @@
       <img src="assets/loong-logo.svg" alt="Loong" class="brand-logo">
       <span class="brand-name">Loong <em>玄龙</em></span>
     </a>
-    <button class="nav-toggle" id="navToggle" aria-label="菜单">
-      <span></span><span></span><span></span>
-    </button>
+    <button class="nav-toggle" id="navToggle" aria-label="菜单"><span></span><span></span><span></span></button>
     <div class="nav-links" id="navLinks">
-      <a href="#pain">为什么需要</a>
-      <a href="#workflow">工作流</a>
-      <a href="#phone">定制手机</a>
-      <a href="#products">产品矩阵</a>
-      <a href="#fde">FDE 合作</a>
-      <a href="#contact" class="nav-cta">合作洽谈</a>
+      <a href="#products">产品</a>
+      <a href="#case">真实案例</a>
+      <a href="#how">怎么做到的</a>
+      <a href="#phone">手机交付</a>
+      <a href="#contact" class="nav-cta">联系合作</a>
     </div>
   </div>
 </nav>
@@ -41,24 +38,15 @@
   <div class="hero-bg"></div>
   <div class="container hero-inner">
     <div class="hero-copy">
-      <div class="hero-badge">
-        <span class="pulse"></span>
-        Loong 1 + 2 · 开发底座 + 企业工作台 · 已在真实客户环境运行
-      </div>
-      <h1>把 AI 的 <span class="strike">Demo</span><br>变成企业的<span class="grad">生产系统</span></h1>
+      <div class="hero-badge"><span class="pulse"></span>三个产品已在真实客户环境运行</div>
+      <h1>别止步于 Demo。<br>让 AI <span class="grad">真正落地</span>成生产系统</h1>
       <p class="hero-sub">
-        用 WorkBuddy 类 agent 搭的 MVP 很炫，但进了企业就卡在：<em>没法验收、没法审计、没法交接、没法收尾款</em>。
-        Loong 玄龙是给 FDE 交付伙伴的软件工程底座——<strong>别人卖聪明的 AI，我们卖不守规矩就过不去的门。</strong>
+        Loong 玄龙 = AI 软件工程底座 + 企业定制手机交付。<br>
+        <strong>别人给你一个演示，我们给你能验收、能审计、能收尾款的交付。</strong>
       </p>
       <div class="hero-actions">
-        <a href="#workflow" class="btn btn-primary">看工作流如何把关</a>
-        <a href="#phone" class="btn btn-ghost">企业定制手机交付 →</a>
-      </div>
-      <div class="hero-stats">
-        <div class="stat"><b data-count="34">0</b><span>条行为铁律<br>每条都有事故复盘</span></div>
-        <div class="stat"><b data-count="21">0</b><span>个工作流技能<br>拆解→实现→审查→验证→发布</span></div>
-        <div class="stat"><b data-count="100">0</b><span>% 全链路私有化<br>自建 Gitea / 算力矩阵</span></div>
-        <div class="stat"><b class="no-count">1:1</b><span>项目配 FDE 陪跑<br>制度语料整体交接</span></div>
+        <a href="mailto:554176937@qq.com" class="btn btn-primary">📧 554176937@qq.com</a>
+        <a href="#products" class="btn btn-ghost">先看产品截图 ↓</a>
       </div>
     </div>
     <div class="hero-visual" aria-hidden="true">
@@ -66,152 +54,186 @@
         <div class="term-bar"><i></i><i></i><i></i><span>loong — 玄龙引擎</span></div>
         <div class="term-body">
           <div class="line cmd">$ loong run 实现-牙科获客工单</div>
-          <div class="line ok">✓ 路由门 Kind/Feature → implement 技能已加载</div>
-          <div class="line dim">→ 实现Producer：3 文件修改，返回部署断言标记</div>
-          <div class="line warn">✗ 审查门：断言「构建通过」缺少当轮证据 —— 拒绝放行</div>
+          <div class="line ok">✓ 流程路由 → 实现管线已加载</div>
+          <div class="line warn">✗ 审查门：断言「构建通过」缺当轮证据 → 拒绝放行</div>
           <div class="line cmd">$ loong verify --fresh</div>
-          <div class="line ok">✓ 新鲜证据：pnpm build exit=0 · 137 tests passed (当轮)</div>
-          <div class="line ok">✓ 外部写入回读：CRM 联系人已确认写入（独立读路径）</div>
-          <div class="line dim">→ 证据链归档：file:line · 命令 · 退出码 → 工单系统记录</div>
-          <div class="line ok">✓ 放行。交付物：定制手机 APP + 审计底稿</div>
+          <div class="line ok">✓ 新鲜证据：build exit=0 · 137 tests passed</div>
+          <div class="line ok">✓ 放行 → 定制手机 APP + 审计底稿交付</div>
         </div>
       </div>
       <div class="hero-chip chip-1">🔒 无证据 · 不放行</div>
       <div class="hero-chip chip-2">📱 交付即手机</div>
-      <div class="hero-chip chip-3">🗂 每次翻车 → 立法</div>
+      <div class="hero-chip chip-3">🗂 翻车 → 立法</div>
     </div>
   </div>
 </header>
 
-<section class="section" id="pain">
+<section class="section" id="products">
   <div class="container">
-    <div class="section-head">
-      <span class="kicker">为什么需要 Loong</span>
-      <h2>MVP 陷阱：<br>demo 能跑 ≠ 企业能收</h2>
-      <p>企业客户不为「演示效果」买单，只为<strong>可验收、可审计、可运维</strong>的系统买单。这中间隔着一套软件工程制度——恰恰是通用 agent 工具没给的。</p>
+    <div class="section-head center">
+      <span class="kicker">三个产品 · 真实截图</span>
+      <h2>一个底座，三张面孔</h2>
+      <p>引擎与前端解耦。行业不同，底座不变——所以第二个、第三个产品的成本极低。</p>
     </div>
-    <div class="compare">
-      <div class="compare-col bad">
-        <h3>WorkBuddy 类 agent 直做的 MVP</h3>
-        <ul>
-          <li><b>无证据断言</b>：「tests pass, no regressions」随口就来，测试从未跑过</li>
-          <li><b>假成功写入</b>：API 返回 200 就宣布完成，外部系统里其实没生效</li>
-          <li><b>无审查流程</b>：一个 agent 从写到交一条龙，没有第二双眼睛</li>
-          <li><b>demo 即终点</b>：没有部署断言、没有审计底稿、没有交接文档</li>
-          <li><b>交付形态单薄</b>：一个网页链接，客户员工用不起来</li>
-          <li><b>人走茶凉</b>：顾问一撤，制度清零，下个项目从零翻车</li>
-        </ul>
+    <div class="prod-list">
+
+      <div class="prod-card">
+        <div class="prod-shot term-shot">
+          <div class="term-bar"><i></i><i></i><i></i><span>loong CLI</span></div>
+          <div class="term-body">
+            <div class="line cmd">$ loong --version</div>
+            <div class="line dim">0.35.0 — engine since opencode lineage</div>
+            <div class="line cmd">$ loong upgrade</div>
+            <div class="line ok">✓ v0.35.0 ← 自建发行渠道（私有化）</div>
+            <div class="line cmd">$ loong run 评审工单 --kind Kind/Feature</div>
+            <div class="line ok">✓ 路由门 → 五道门全开</div>
+          </div>
+        </div>
+        <div class="prod-info">
+          <div class="prod-tag t1">P1 · 已运行</div>
+          <h3>Loong <span>开发底座</span></h3>
+          <p>AI 编程引擎 + 34 条工程铁律。命令行 / IDE 双形态，自建发行渠道，全链路私有化部署。</p>
+          <ul>
+            <li>无证据不放过：每个完成断言都要当轮验证</li>
+            <li>外部系统写入必须回读确认，杜绝「假成功」</li>
+            <li>四角色审查管线：实现 / 审查 / 综合 / 验证分权</li>
+          </ul>
+        </div>
       </div>
-      <div class="compare-col good">
-        <h3>Loong 底座上落地的交付</h3>
-        <ul>
-          <li><b>断言纪律</b>：没有当轮新鲜验证证据，禁止任何完成声明（红旗语言清单强制拦截）</li>
-          <li><b>写入回读铁律</b>：外部系统每次写入，必须独立读路径回读确认才算成功</li>
-          <li><b>四角色管线</b>：Producer / Reviewer / Synthesizer / Verifier 分权，结构化输出互检</li>
-          <li><b>证据链归档</b>：file:line、命令、退出码全部进工单系统，天然审计底稿</li>
-          <li><b>定制手机交付</b>：获客 / 营销 / 教练场景直接交付企业品牌定制手机</li>
-          <li><b>制度可交接</b>：34 条铁律语料随项目交接，翻车自动变制度，越用越稳</li>
-        </ul>
+
+      <div class="prod-card reverse">
+        <div class="prod-shot img-shot">
+          <img src="assets/shots/buddy-agent.png" alt="LoongBuddy 工作台界面" loading="lazy">
+        </div>
+        <div class="prod-info">
+          <div class="prod-tag t2">P2 · 主力</div>
+          <h3>LoongBuddy <span>企业 AI 工作台</span></h3>
+          <p>多用户多 Agent 自托管工作台。非技术员工也能用的 AI：像聊天一样发任务，后台跑的是完整的工程管线。</p>
+          <ul>
+            <li>专家团队 / 定时任务 / 多渠道接入（网页·微信·钉钉）</li>
+            <li>接受 Loong 底座全部工程门禁加持</li>
+            <li>审计、财务、职称、获客行业工作台的统一母体</li>
+          </ul>
+          <div class="shot-row">
+            <img src="assets/shots/buddy-chat.png" alt="对话界面" loading="lazy">
+            <img src="assets/shots/buddy-channels.png" alt="渠道接入" loading="lazy">
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="callout">
-      <p>「我们卖的不是更聪明的 AI，是<strong>不守规矩就过不去的门</strong> + 每次翻车都变成制度的进化闭环。」</p>
+
+      <div class="prod-card">
+        <div class="prod-shot img-shot">
+          <img src="assets/shots/loongharness-live.jpg" alt="LoongHarness 评审工作台" loading="lazy">
+          <a class="shot-link" href="https://kenyanghui.github.io/dsh-workbench/" target="_blank" rel="noopener">▶ 在线演示（合成数据）</a>
+        </div>
+        <div class="prod-info">
+          <div class="prod-tag t3">P3 · 已交付</div>
+          <h3>LoongHarness <span>项目评审工作台</span></h3>
+          <p>财政评审 / 软件造价审核工作台。报价书进来，审定表出去——每一笔审减都带标准条款和历史案例依据。</p>
+          <ul>
+            <li>功能点法认定：ILF/EIF 数据功能 + EI/EO/EQ 事务功能</li>
+            <li>AI 只给初稿建议，采纳/驳回由评审人决策担责</li>
+            <li>结果件：审定报告 Word + Excel，直接用于招标</li>
+          </ul>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
 
-<section class="section section-alt" id="workflow">
+<section class="section section-alt" id="case">
   <div class="container">
-    <div class="section-head">
-      <span class="kicker">Loong 工作流优势</span>
-      <h2>五道门，从工单到生产</h2>
-      <p>提示词劝不住的，代码门禁来拦。每一道门都在引擎层强制执行，不是「最佳实践建议」。</p>
+    <div class="section-head center">
+      <span class="kicker">真实案例 · 数字说话</span>
+      <h2>一份报价书进来，审定表出去</h2>
+      <p>中通服项目评审工作台（LoongHarness 首个交付场景，合成脱敏数据演示批次）：</p>
     </div>
-    <div class="gates">
-      <div class="gate">
-        <div class="gate-no">门 1</div>
-        <h3>路由门 · Process Gate</h3>
-        <p>带工单进来的任务先过流程路由：实现类走实现管线、缺陷类走复现优先。路由只能跳过「不需要的阶段」，<strong>永远不能削弱审查与验证</strong>。准入 fail-closed：声明有瑕疵就整体拒绝，不留半吊子配置。</p>
+    <div class="case-band">
+      <div class="case-cell">
+        <b>1,752 万</b><span>送审金额</span>
       </div>
-      <div class="gate">
-        <div class="gate-no">门 2</div>
-        <h3>断言纪律 · Claim Discipline</h3>
-        <p>「构建成功 / 测试通过 / 无回归」都是需要当轮证据的<strong>主张</strong>。识别 → 执行 → 读完输出 → 核对，四步走完才准开口。「应该没问题 / 我很有信心」被列为红旗语言。工具失败必须诚实上报，禁止编结果填坑。</p>
+      <div class="case-arrow">→</div>
+      <div class="case-cell">
+        <b>266 万</b><span>审定金额</span>
       </div>
-      <div class="gate">
-        <div class="gate-no">门 3</div>
-        <h3>写入回读 · Verify External Writes</h3>
-        <p>对外部系统（CRM / 工单 / 支付）每次写操作，必须走<b>独立读路径</b>回读验证后才准记账成功。API 返回成功 ≠ 效果成立——这条铁律来自真实生产事故，写进了每条交付管线的肌肉记忆。</p>
-      </div>
-      <div class="gate">
-        <div class="gate-no">门 4</div>
-        <h3>审查管线 · DAG Pipeline</h3>
-        <p>Producer / Reviewer / Synthesizer / Verifier 四角色，JSON Schema 结构化输出；同文件改动串行、异文件并行。实现者必须返回可检索的部署断言标记，<strong>缺标记不许进部署阶段</strong>。破坏性决策（合并 / 发版 / 生产写入）永远强制人工确认。</p>
-      </div>
-      <div class="gate">
-        <div class="gate-no">门 5</div>
-        <h3>复盘立法 · Retrospective</h3>
-        <p>每次事故复盘直接沉淀为带日期的规则条目进语料库。2026-09-30 启动盘事件立「先调研后动工」，2026-10-06「假成功」立回读铁律——<strong>系统每翻一次车，就进化一次</strong>。今天踩的坑，下个项目天然免疫。</p>
+      <div class="case-arrow">→</div>
+      <div class="case-cell hot">
+        <b>84.8%</b><span>审减率 · 笔笔有据</span>
       </div>
     </div>
-    <div class="two-col">
-      <div class="panel">
-        <h3>两层工件存储</h3>
-        <p>Agent 内部交接走本地 Tier 1（快、免同步税），人类决策与跨项目追溯走工单后端 Tier 2（系统记录）。<strong>审计时拿得出完整底稿，交接时带得走全部制度。</strong></p>
-      </div>
-      <div class="panel">
-        <h3>全链路私有化</h3>
-        <p>更新源、工单、发布、文档全部在自建 Gitea（gitea.aibay.asia），算力矩阵多节点调度。数据不出客户与自己的边界——银行 KYC、运营商审计这类合规敏感单子，<strong>私有化是入场券，Loong 是原生形态</strong>。</p>
-      </div>
+    <div class="case-notes">
+      <div class="case-note"><b>每笔审减可追溯</b><span>标准条款 + 历史案例 + 采购价三方依据，不是「AI 觉得贵」</span></div>
+      <div class="case-note"><b>人机边界清晰</b><span>AI 出初稿，评审人采纳/驳回并盖章担责</span></div>
+      <div class="case-note"><b>直接可用</b><span>审定报告 Word + Excel，甲方按审定价招标</span></div>
     </div>
+    <p class="case-cta">想看自己项目跑一遍？<a href="mailto:554176937@qq.com?subject=评审工作台演示">发个邮件，安排在线演示</a>，或直接打开上面的在线演示。</p>
   </div>
 </section>
 
-<section class="section" id="phone">
+<section class="section" id="how">
+  <div class="container">
+    <div class="section-head center">
+      <span class="kicker">怎么做到的</span>
+      <h2>五道门，AI 骗不过去</h2>
+      <p>通用 agent 说「做完了」，Loong 要它「证明做完了」。门禁在引擎层写死，不是提示词劝说。</p>
+    </div>
+    <div class="gates-visual">
+      <div class="gatev">
+        <div class="gatev-no">①</div>
+        <h4>路由门</h4>
+        <p>任务先过流程路由，审查验证环节永远不能跳过</p>
+      </div>
+      <div class="gatev">
+        <div class="gatev-no">②</div>
+        <h4>证据门</h4>
+        <p>「测试通过」必须附当轮命令输出，「我很有信心」过不去</p>
+      </div>
+      <div class="gatev">
+        <div class="gatev-no">③</div>
+        <h4>回读门</h4>
+        <p>写了 CRM/工单/支付？独立读路径确认才算成功</p>
+      </div>
+      <div class="gatev">
+        <div class="gatev-no">④</div>
+        <h4>审查门</h4>
+        <p>实现/审查/验证四角色分权，高危操作人工确认</p>
+      </div>
+      <div class="gatev">
+        <div class="gatev-no">⑤</div>
+        <h4>复盘门</h4>
+        <p>每次翻车沉淀为制度，下个项目天然免疫</p>
+      </div>
+    </div>
+    <div class="loop-note">↻ 这套「翻车 → 立法 → 免疫」循环已跑了 34 条铁律，<a href="https://gitea.aibay.asia/Loong/loong-workflow" target="_blank" rel="noopener">全部开源语料可查 →</a></div>
+  </div>
+</section>
+
+<section class="section section-alt" id="phone">
   <div class="container phone-grid">
     <div class="phone-copy">
-      <span class="kicker">交付优势 · 企业定制手机</span>
+      <span class="kicker">交付形态 · 独一份</span>
       <h2>软件的终点，<br>是长在企业手里的一部手机</h2>
       <p class="lead">
-        通用 agent 交付一个网页链接，员工不会用、老板看不到价值。Loong 把交付物做成<b>企业自己品牌的定制手机</b>——
-        预装为该企业定制的 APP / 小程序，开箱即用，老板看得见、员工离不开、竞品抄不走。
+        网页 demo 员工不会用，老板看不到价值。Loong 把交付物做成<b>企业自己品牌的定制手机</b>——预装定制 APP，开箱即用，竞品抄不走。
       </p>
       <ul class="phone-points">
-        <li>
-          <b>AI 获客手机</b>
-          <span>牙科诊所、教培机构等线下生意：定制获客 APP + AI 邀约 / 跟进 / 复购提醒，员工上手即用</span>
-        </li>
-        <li>
-          <b>AI 营销手机</b>
-          <span>行业协会 / 渠道伙伴批量分发：协会品牌 + 会员企业专属场景，规模化获客利器</span>
-        </li>
-        <li>
-          <b>教练 / 顾问工作台手机</b>
-          <span>学习力教练、职称顾问随身工作台：融合通话记录、学员跟进、AI 纪要与督导</span>
-        </li>
-        <li>
-          <b>品牌完全可换</b>
-          <span>LOGO、配色、应用名全部按客户品牌定制——客户认的是自己的品牌，离不开的是你的底座</span>
-        </li>
+        <li><b>AI 获客手机</b><span>牙科 / 教培等线下生意：AI 邀约 · 跟进 · 复购提醒，员工上手即用</span></li>
+        <li><b>AI 营销手机</b><span>行业协会批量分发：协会品牌 + 会员专属场景</span></li>
+        <li><b>教练工作台手机</b><span>学习力教练 / 职称顾问随身工作台</span></li>
       </ul>
-      <div class="phone-note">
-        <p>手机硬件供应链 + Loong 软件底座 + 你的行业场景 = <strong>客户续费的理由，和竞品拿不走的壁垒</strong>。</p>
-      </div>
     </div>
     <div class="phone-visual" aria-hidden="true">
       <div class="phone3d">
         <div class="phone-screen">
-          <div class="app-head">
-            <span class="app-logo">圣贝</span>
-            <span class="app-name">圣贝牙科 · AI 获客</span>
-          </div>
+          <div class="app-head"><span class="app-logo">圣贝</span><span class="app-name">圣贝牙科 · AI 获客</span></div>
           <div class="app-card">
             <div class="app-card-title">今日新客 <b>+7</b></div>
             <div class="app-bars"><i style="height:30%"></i><i style="height:55%"></i><i style="height:42%"></i><i style="height:70%"></i><i style="height:88%"></i></div>
           </div>
           <div class="app-row"><span class="dot ok"></span>AI 邀约 · 3 位初诊已确认到店</div>
           <div class="app-row"><span class="dot ok"></span>跟进提醒 · 张女士术后 7 天回访</div>
-          <div class="app-row"><span class="dot warn"></span>沉睡唤醒 · 28 天未到店客户 41 人</div>
+          <div class="app-row"><span class="dot warn"></span>沉睡唤醒 · 28 天未到店 41 人</div>
           <div class="app-cta">一键 AI 外呼跟进</div>
           <div class="app-foot">Powered by Loong 玄龙底座</div>
         </div>
@@ -223,76 +245,28 @@
   </div>
 </section>
 
-<section class="section section-alt" id="products">
-  <div class="container">
-    <div class="section-head">
-      <span class="kicker">产品矩阵</span>
-      <h2>一个底座，三张面孔</h2>
-      <p>引擎与前端彻底解耦（sidecar 架构已在自家桌面端验证）。行业化 = 换路由表 + 技能包，不动引擎——伙伴的边际成本极低。</p>
-    </div>
-    <div class="products">
-      <div class="product">
-        <div class="product-tag">P1 · 已运行</div>
-        <h3>Loong 开发底座</h3>
-        <p class="product-en">AI Software Engineering Base</p>
-        <ul>
-          <li>CLI + IDE，从 opencode 深度演进的工程化引擎</li>
-          <li>34 铁律 / 21 技能 / 13 清单 / 9 Schema 工作流语料</li>
-          <li>算力矩阵多节点：主算力 + 存储 + 值守 + 可扩展 worker</li>
-          <li>自建发行渠道，版本、更新、回滚全部自持</li>
-        </ul>
-      </div>
-      <div class="product hot">
-        <div class="product-tag">P2 · 首选</div>
-        <h3>LoongBuddy 工作台</h3>
-        <p class="product-en">Enterprise AI Workbench</p>
-        <ul>
-          <li>企业级多用户多 Agent 自托管工作台</li>
-          <li>非技术员工也能用的 AI 工作台：表单化、流程化</li>
-          <li>接受 Loong 底座全部工程门禁加持</li>
-          <li>审计 / 财务 / 职称评定等行业工作台的统一母体</li>
-        </ul>
-      </div>
-      <div class="product">
-        <div class="product-tag">P3 · 储备</div>
-        <h3>LoongHarness</h3>
-        <p class="product-en">Enterprise Agent Harness</p>
-        <ul>
-          <li>对标 deepseek harness 形态的企业工作台</li>
-          <li>同一 Loong 底座，另一类前端交互范式</li>
-          <li>与 LoongBuddy 共享技能包与铁律语料</li>
-          <li>按客户交互偏好选型，随单启动</li>
-        </ul>
-      </div>
-    </div>
-    <div class="matrix-note">
-      <p><b>接单姿势</b>：AI 工作台（获客 / 审计 / 职称 / 论文 / 量化…）→ 项目审核 → 基于玄龙底座改造落地 → 定制手机 / 工作台交付。先明确边界、做拆解，否则需求无穷尽。</p>
-    </div>
-  </div>
-</section>
-
 <section class="section" id="fde">
   <div class="container">
-    <div class="section-head">
-      <span class="kicker">FDE 合作模式</span>
+    <div class="section-head center">
+      <span class="kicker">合作模式</span>
       <h2>你懂客户，我们懂工程</h2>
-      <p>FDE（前置部署工程师）伙伴负责客户关系与行业场景，Loong 负责工程严谨性与交付形态。三段式合作，每一段都有真实可交的东西。</p>
+      <p>面向 FDE 交付伙伴（前置部署工程师）三段式，每段都有真实可交的东西。</p>
     </div>
     <div class="fde-steps">
       <div class="fde-step">
         <div class="step-no">01</div>
-        <h3>培训 · 建立话语体系</h3>
-        <p>从优秀开源系统拆解入手的工作坊（AI + 财商 / 获客 / 量化），用真实语料教学。伙伴带客户来，我们让客户看见「工程严谨」长什么样。</p>
+        <h3>培训</h3>
+        <p>开源系统拆解工作坊，用真实语料教学。客户看见「工程严谨」长什么样。</p>
       </div>
       <div class="fde-step">
         <div class="step-no">02</div>
-        <h3>陪跑 · 第一个项目落地</h3>
-        <p>首单由 Loong FDE 与伙伴共同交付：从工单拆解、DAG 审查到定制手机交付，全程证据链留痕。伙伴在真实项目里学会用门，而不是背话术。</p>
+        <h3>陪跑</h3>
+        <p>首单共同交付：工单拆解 → DAG 审查 → 定制手机，全程证据链留痕。</p>
       </div>
       <div class="fde-step">
         <div class="step-no">03</div>
-        <h3>独立 · 制度交接运转</h3>
-        <p>工作流语料 + 铁律 + 复盘库整体移交给伙伴团队。翻车自动变制度，项目越做越稳——伙伴获得的是可复制的交付能力，不是一次性的外包。</p>
+        <h3>独立</h3>
+        <p>工作流语料 + 铁律 + 复盘库整体交接。伙伴获得可复制的交付能力。</p>
       </div>
     </div>
     <div class="fde-scenes">
@@ -304,13 +278,13 @@
 <section class="section cta-section" id="contact">
   <div class="container">
     <div class="cta-card">
-      <h2>把你的下一个 demo，<br>变成能收尾款的交付</h2>
-      <p>如果你正在用 agent 工具给企业客户做 MVP，被「没法验收、没法落地」卡住——这就是我们的主场。带上场景来聊，边界我们帮你拆。</p>
-      <div class="cta-actions">
-        <a href="https://github.com/kenyanghui/kenyanghui.github.io/issues" target="_blank" rel="noopener" class="btn btn-primary">申请 FDE 合作试点</a>
-        <a href="https://gitea.aibay.asia" target="_blank" rel="noopener" class="btn btn-ghost">Gitea · 发行与文档</a>
+      <h2>把你的下一个 Demo，<br>变成能收尾款的交付</h2>
+      <p>带上场景来聊，边界我们帮你拆。</p>
+      <div class="email-cta">
+        <a class="email-big" href="mailto:554176937@qq.com?subject=Loong合作洽谈">554176937@qq.com</a>
+        <button class="btn btn-primary" id="copyEmail" data-email="554176937@qq.com">复制邮箱</button>
       </div>
-      <p class="cta-note">合作洽谈联系方式见仓库 README（微信 / 公众号待接入）· www.aibay.asia</p>
+      <p class="cta-note">邮件必回 · 也可 <a href="https://gitea.aibay.asia" target="_blank" rel="noopener">逛我们的 Gitea</a> 看全部工程现场</p>
     </div>
   </div>
 </section>
@@ -319,23 +293,14 @@
   <div class="container footer-inner">
     <div class="footer-brand">
       <img src="assets/loong-logo-white.svg" alt="Loong" class="footer-logo">
-      <div>
-        <b>Loong 玄龙</b>
-        <span>AI 软件工程底座 · 企业定制交付</span>
-      </div>
+      <div><b>Loong 玄龙</b><span>AI 软件工程底座 · 企业定制交付</span></div>
     </div>
     <div class="footer-links">
-      <a href="#workflow">工作流</a>
-      <a href="#phone">定制手机</a>
-      <a href="#products">产品矩阵</a>
-      <a href="#fde">FDE 合作</a>
+      <a href="#products">产品</a><a href="#case">案例</a><a href="#phone">手机交付</a>
       <a href="https://gitea.aibay.asia" target="_blank" rel="noopener">Gitea</a>
       <a href="https://github.com/kenyanghui" target="_blank" rel="noopener">GitHub</a>
     </div>
-    <div class="footer-meta">
-      <span>© 2026 Loong · www.aibay.asia</span>
-      <span>不守规矩就过不去的门</span>
-    </div>
+    <div class="footer-meta"><span>© 2026 Loong · www.aibay.asia</span><span>554176937@qq.com</span></div>
   </div>
 </footer>
 

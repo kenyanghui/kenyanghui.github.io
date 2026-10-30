@@ -22,62 +22,43 @@
     });
   }
 
-  /* stat counters */
-  var counted = false;
-  function runCounters() {
-    if (counted) return;
-    var els = document.querySelectorAll("[data-count]");
-    if (!els.length) return;
-    counted = true;
-    els.forEach(function (el) {
-      var target = parseInt(el.getAttribute("data-count"), 10) || 0;
-      var start = null;
-      var dur = 1400;
-      function tick(ts) {
-        if (!start) start = ts;
-        var p = Math.min((ts - start) / dur, 1);
-        var eased = 1 - Math.pow(1 - p, 3);
-        el.textContent = Math.round(target * eased).toString();
-        if (p < 1) requestAnimationFrame(tick);
+  /* copy email button */
+  var copyBtn = document.getElementById("copyEmail");
+  if (copyBtn) {
+    copyBtn.addEventListener("click", function () {
+      var email = copyBtn.getAttribute("data-email") || "";
+      var done = function () {
+        var old = copyBtn.textContent;
+        copyBtn.textContent = "已复制 ✓";
+        setTimeout(function () { copyBtn.textContent = old; }, 1600);
+      };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(email).then(done, done);
+      } else {
+        var ta = document.createElement("textarea");
+        ta.value = email; document.body.appendChild(ta); ta.select();
+        try { document.execCommand("copy"); } catch (e) {}
+        document.body.removeChild(ta); done();
       }
-      requestAnimationFrame(tick);
     });
   }
 
   /* scroll reveal */
   var revealEls = document.querySelectorAll(
-    ".section-head, .compare-col, .callout, .gate, .panel, .phone-points li, .phone-note, .product, .matrix-note, .fde-step, .fde-scenes, .cta-card"
+    ".section-head, .prod-card, .case-band, .case-note, .case-cta, .gatev, .loop-note, .phone-points li, .fde-step, .fde-scenes, .cta-card"
   );
   revealEls.forEach(function (el) { el.classList.add("reveal"); });
   if ("IntersectionObserver" in window) {
     var io = new IntersectionObserver(
       function (entries) {
         entries.forEach(function (en) {
-          if (en.isIntersecting) {
-            en.target.classList.add("visible");
-            io.unobserve(en.target);
-            var b = en.target.querySelector("b[data-count]");
-            if (b || en.target.hasAttribute("data-count")) runCounters();
-          }
+          if (en.isIntersecting) { en.target.classList.add("visible"); io.unobserve(en.target); }
         });
       },
-      { threshold: 0.16 }
+      { threshold: 0.14 }
     );
     revealEls.forEach(function (el) { io.observe(el); });
-    var heroStats = document.querySelector(".hero-stats");
-    if (heroStats) {
-      var io2 = new IntersectionObserver(
-        function (entries) {
-          entries.forEach(function (en) {
-            if (en.isIntersecting) { runCounters(); io2.disconnect(); }
-          });
-        },
-        { threshold: 0.4 }
-      );
-      io2.observe(heroStats);
-    }
   } else {
     revealEls.forEach(function (el) { el.classList.add("visible"); });
-    runCounters();
   }
 })();
