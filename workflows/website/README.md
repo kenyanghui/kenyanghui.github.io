@@ -1,8 +1,10 @@
 # 网站建设工作流（website-workflow）
-
-> 继承自 [Loong/loong-workflow](https://gitea.aibay.asia/Loong/loong-workflow)（SSOT 语料库），
+> 继承自 [Loong/loong-workflow](https://gitea.aibay.asia/Loong/loong-workflow)（开发工作流 SSOT），
 > 是其在本站场景的**领域特化**：官网迭代的经验、教训、规则沉淀。
-> 本目录是网站类项目的唯一权威源；拆分为独立 Gitea 仓库后此行改为同步说明。
+>
+> **权威源（SSOT）：[Loong/website-workflow](https://gitea.aibay.asia/Loong/website-workflow)**
+> （2026-10-31 自本目录拆出独立仓库）。本目录是随站快照，改动请提交独立仓后同步回这里，
+> 或反向：改这里后 subtree 重推。
 
 ## 范围
 
