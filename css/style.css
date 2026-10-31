@@ -381,7 +381,14 @@ img { display:block; max-width:100%; }
 .dl-card b { font-size:15.5px; color:var(--ink); display:block; margin-bottom:8px; }
 .dl-card p { font-size:13px; color:var(--ink-2); line-height:1.7; margin-bottom:12px; }
 .dl-cta { font-size:14px; font-weight:700; color:var(--link); }
+.dl-cta { display:block; }
 .dl-cta:hover { text-decoration:underline; }
+.dl-cta-2 { font-size:12.5px; font-weight:600; color:var(--ink-2); margin-top:7px; }
+.dl-cta-2:hover { color:#D64711; }
+.dl-ver-tag { font-size:11px; font-weight:700; color:#D64711; background:#FFF0E8; padding:2px 9px; border-radius:999px; vertical-align:2px; margin-left:6px; }
+.dl-mail { display:block; margin-top:12px; padding-top:11px; border-top:1px dashed var(--line); font-size:12.5px; color:var(--ink-3); }
+.dl-mail:hover { color:#D64711; }
+.dl-sha { display:inline-block; margin-top:9px; font-size:12px; color:var(--link); }
 @media (max-width: 700px) { .dl-apply { grid-template-columns:1fr; } .dl-row-2 { margin-left:0; } .dl-btn { padding:7px 14px; } }
 
 /* ===== SCROLL REVEAL ===== */
