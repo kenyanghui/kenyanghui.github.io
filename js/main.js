@@ -45,7 +45,7 @@
 
   /* scroll reveal */
   var revealEls = document.querySelectorAll(
-    ".section-head, .prod-card, .case-band, .case-note, .case-cta, .industry-grid .ind-card, .gatev, .loop-note, .phone-points li, .phone-strip figure, .fit-card, .pt-card, .contact-split > div, .ws-card, .fde-step, .fde-scenes, .cta-card"
+    ".section-head, .prod-card, .case-band, .case-note, .case-cta, .industry-grid .ind-card, .gatev, .loop-note, .phone-points li, .phone-strip figure, .fit-card, .pt-card, .contact-split > div, .ws-card, .fde-step, .cta-card"
   );
   revealEls.forEach(function (el) { el.classList.add("reveal"); });
   if ("IntersectionObserver" in window) {
