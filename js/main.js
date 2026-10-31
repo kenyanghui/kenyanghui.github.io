@@ -43,9 +43,20 @@
     });
   }
 
+  /* OS 识别：高亮当前平台的下载行 */
+  (function () {
+    var ua = navigator.userAgent;
+    var cur = null;
+    if (/Win/i.test(ua)) cur = "win";
+    else if (/Mac/i.test(ua)) cur = "mac-arm";
+    else if (/Linux/i.test(ua) && !/Android/i.test(ua)) cur = "linux";
+    var hl = document.querySelector('.dl-row[data-os="' + cur + '"]');
+    if (hl) hl.classList.add("hl");
+  })();
+
   /* scroll reveal */
   var revealEls = document.querySelectorAll(
-    ".section-head, .prod-card, .case-band, .case-note, .case-cta, .industry-grid .ind-card, .gatev, .loop-note, .phone-points li, .phone-strip figure, .fit-card, .pt-card, .contact-split > div, .ws-card, .fde-step, .cta-card"
+    ".section-head, .prod-card, .case-band, .case-note, .case-cta, .industry-grid .ind-card, .gatev, .loop-note, .phone-points li, .phone-strip figure, .fit-card, .pt-card, .contact-split > div, .ws-card, .dl-row, .dl-card, .fde-step, .cta-card"
   );
   revealEls.forEach(function (el) { el.classList.add("reveal"); });
   if ("IntersectionObserver" in window) {
