@@ -474,3 +474,19 @@ img { display:block; max-width:100%; }
 .about-facts { display:flex; flex-wrap:wrap; gap:10px; margin-top:14px; }
 .about-facts span { font-size:12px; font-weight:600; color:var(--ink-2); background:var(--paper-2); padding:6px 12px; border-radius:999px; }
 @media (max-width:900px){ .about-grid { grid-template-columns:1fr; } }
+
+/* ===== 站点导航页（sites.html，2026-11-09）===== */
+.sites-hero { padding:120px 0 30px; background:linear-gradient(180deg,var(--paper-2),#fff); }
+.sites-hero h1 { font-size:42px; font-weight:800; letter-spacing:-.02em; color:var(--ink); margin:10px 0 14px; }
+.sites-sub { font-size:15px; color:var(--ink-3); line-height:1.8; }
+.sites-sub .lock { color:#D64711; }
+.site-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-top:26px; }
+.site-card { border-radius:var(--r-lg); padding:24px 22px; background:#fff; border:1px solid rgba(0,0,0,.06); box-shadow:var(--shadow-sm); transition:.25s; text-decoration:none; }
+.site-card:hover { transform:translateY(-4px); box-shadow:var(--shadow-md); border-color:rgba(214,71,17,.25); }
+.site-top { display:flex; align-items:center; gap:8px; margin-bottom:8px; flex-wrap:wrap; }
+.site-top b { font-size:15.5px; font-weight:800; color:var(--ink); letter-spacing:-.01em; }
+.site-domain { font-size:11.5px; font-weight:600; color:var(--ink-3); background:var(--paper-2); padding:3px 9px; border-radius:999px; }
+.site-top .lock { font-size:13px; }
+.site-card p { font-size:13px; color:var(--ink-2); line-height:1.65; margin:0; }
+@media (max-width:960px){ .site-grid { grid-template-columns:repeat(2,1fr); } }
+@media (max-width:640px){ .site-grid { grid-template-columns:1fr; } .sites-hero h1 { font-size:32px; } }
