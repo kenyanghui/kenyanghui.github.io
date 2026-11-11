@@ -14,7 +14,12 @@
 <link rel="icon" type="image/svg+xml" href="../assets/loong-logo.svg">
 <link rel="apple-touch-icon" href="../assets/loong-logo-256.png">
 <link rel="stylesheet" href="../css/style.css">
-<style>.nav-links a.is-current{color:#D64711;font-weight:700}</style>
+<style>
+.nav-links a.is-current{color:#D64711;font-weight:700}
+.grid-4{grid-template-columns:repeat(4,1fr)}
+@media (max-width:980px){.grid-4{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:720px){.grid-4{grid-template-columns:1fr}}
+</style>
 </head>
 <body>
 
@@ -248,7 +253,7 @@
       <h2>从一次工作坊，<br>到一部能验收的手机</h2>
       <p>不写大方案、不做长调研。带真实流程来，一天拆清楚，两周出样机，30 天见数据。</p>
     </div>
-    <div class="gates-visual" style="grid-template-columns:repeat(4,1fr)">
+    <div class="gates-visual grid-4">
       <div class="gatev">
         <div class="gatev-no">01</div>
         <h4>场景拆解</h4>
