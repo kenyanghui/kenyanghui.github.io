@@ -3,293 +3,170 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>站点导航 — 全部服务一站直达 · aibay.asia</title>
-<meta name="description" content="aibay.asia 全部站点导航：对外产品、研发工程、内部服务、受限预留，分门别类一站直达。">
-<meta name="robots" content="noindex">
-<link rel="icon" href="assets/favicon.ico" sizes="any">
-<link rel="icon" type="image/svg+xml" href="assets/loong-logo.svg">
-<link rel="stylesheet" href="css/style.css">
+<title>AIBay 站点导航 · aibay.asia 子域名全览</title>
+<meta name="description" content="aibay.asia 全部子域名站点导航：玄龙 AI 手机主站、品牌工作坊、产品平台、量化资讯工具与内部设施。">
 <style>
-.st{display:inline-block;font-size:10px;line-height:1.6;padding:1px 8px;border-radius:9px;margin-left:6px;white-space:nowrap;vertical-align:middle;font-weight:600}
-.st-ok{background:#e7f6ec;color:#15803d}
-.st-warn{background:#fdf0e7;color:#b45309}
-.st-off{background:#eef1f5;color:#6b7280}
-.st-new{background:#e0f2fe;color:#0369a1}
-.st-merge{background:#f3e8ff;color:#7e22ce}
-.site-card p{font-size:12.5px;line-height:1.75;color:var(--ink-soft,#4b5563)}
-.legend{font-size:12px;color:#6b7280;margin-top:8px}
+:root{--red:#c81623;--red-dark:#a01019;--ink:#1c2333;--sub:#5b6472;--line:#e6e8ee;--bg:#f6f7fa;--card:#fff;
+--green:#0e9f6e;--amber:#b7791f;--blue:#2563eb;--gray:#8a93a3}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--ink);line-height:1.65}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+header.top{background:linear-gradient(135deg,#151a26,#2a1520 60%,#3d1016);color:#fff;padding:52px 0 44px}
+.eyebrow{font-size:12px;letter-spacing:.28em;color:#e8b4b8;text-transform:uppercase;margin-bottom:12px}
+header.top h1{font-size:34px;font-weight:800;letter-spacing:.02em}
+header.top h1 span{color:#ff6b73}
+header.top p.sub{margin-top:12px;color:#c6ccd8;font-size:14.5px;max-width:640px}
+.stats{display:flex;gap:26px;margin-top:24px;flex-wrap:wrap}
+.stats .st b{font-size:24px;font-weight:800;color:#fff}
+.stats .st span{display:block;font-size:12px;color:#aab2c2}
+nav.catnav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav.catnav .wrap{display:flex;gap:6px;overflow-x:auto;padding-top:12px;padding-bottom:12px}
+nav.catnav a{flex:none;font-size:13px;padding:6px 14px;border-radius:99px;color:var(--sub);border:1px solid transparent}
+nav.catnav a:hover{color:var(--red);border-color:#f3c6ca;background:#fff5f5}
+section{padding:38px 0 6px}
+h2.sec{font-size:21px;font-weight:800;display:flex;align-items:center;gap:10px;margin-bottom:6px}
+h2.sec::before{content:"";width:5px;height:22px;border-radius:3px;background:var(--red)}
+p.secdesc{color:var(--sub);font-size:13.5px;margin-bottom:20px}
+.hero{display:flex;flex-wrap:wrap;gap:26px;align-items:center;background:linear-gradient(120deg,#fff,#fff5f4);border:1px solid #f3d4d6;border-radius:18px;padding:30px 32px;box-shadow:0 10px 34px rgba(200,22,35,.07)}
+.hero .info{flex:1;min-width:260px}
+.hero h3{font-size:24px;font-weight:800;margin-bottom:8px}
+.hero p{color:var(--sub);font-size:14px;max-width:560px}
+.hero .go{flex:none}
+.btn{display:inline-block;background:var(--red);color:#fff;font-weight:700;font-size:14px;padding:12px 26px;border-radius:12px;box-shadow:0 6px 18px rgba(200,22,35,.25)}
+.btn:hover{background:var(--red-dark)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;display:flex;flex-direction:column;gap:8px;transition:box-shadow .15s,transform .15s,border-color .15s}
+a.card:hover{transform:translateY(-2px);border-color:#f0b6bb;box-shadow:0 10px 26px rgba(28,35,51,.08)}
+.card .row1{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.dom{font-weight:800;font-size:15.5px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+.dom small{color:var(--sub);font-weight:500}
+.pill{flex:none;font-size:11px;font-weight:700;padding:3px 10px;border-radius:99px;letter-spacing:.04em}
+.pill.ok{background:#e7f7f0;color:var(--green)}
+.pill.auth{background:#fdf3e3;color:var(--amber)}
+.pill.jump{background:#eaf0fe;color:var(--blue)}
+.pill.down{background:#f1f2f5;color:var(--gray)}
+.card .name{font-size:14px;font-weight:700}
+.card .desc{font-size:13px;color:var(--sub)}
+.card.hot{border-color:#f0b6bb;background:linear-gradient(160deg,#fff,#fffafa)}
+footer{margin:46px 0 40px;padding-top:22px;border-top:1px solid var(--line);color:var(--gray);font-size:12.5px;line-height:2}
+@media(max-width:640px){header.top h1{font-size:26px}.hero{padding:22px}}
 </style>
 </head>
 <body>
 
-<nav class="nav scrolled" id="nav">
-  <div class="nav-inner">
-    <a class="brand" href="/">
-      <img src="assets/loong-logo.svg" alt="Loong" class="brand-logo">
-      <span class="brand-name">Loong <em>玄龙</em></span>
-    </a>
-    <div class="nav-links" id="navLinks">
-      <a href="/#phone">AI 手机</a>
-      <a href="/#workshop">工作坊</a>
-      <a href="/#about">关于心光</a>
-      <a href="/" class="nav-cta">← 返回官网</a>
+<header class="top">
+  <div class="wrap">
+    <div class="eyebrow">AIBay.asia · Site Directory</div>
+    <h1>AIBay <span>站点导航</span></h1>
+    <p class="sub">aibay.asia 全部子域名一图总览：从玄龙 AI 手机主站、各行业工作坊，到墨砚 / 墨匠 / KYC 等产品平台与内部研发设施，统一入口、按类索引。</p>
+    <div class="stats">
+      <div class="st"><b>35</b><span>收录子域名</span></div>
+      <div class="st"><b>26</b><span>在线可访问</span></div>
+      <div class="st"><b>6</b><span>站点分类</span></div>
+      <div class="st"><b>2026-11-24</b><span>最近更新</span></div>
     </div>
-  </div>
-</nav>
-
-<header class="sites-hero">
-  <div class="container">
-    <span class="kicker">SITE MAP</span>
-    <h1>站点导航</h1>
-    <p class="sites-sub">aibay.asia 全部 35 个子域，逐一登记，无一遗漏，分门别类，一站直达。<br>带 <b class="lock">🔒</b> 标记的为内部系统，需账号登录。<span class="legend">状态徽章（2026-11-17 全站实测）：<b class="st st-ok">✅ 在线</b><b class="st st-merge">↪ 合并跳转</b><b class="st st-warn">⚠️ 暂不可用</b><b class="st st-off">· 留档停用</b><b class="st st-new">NEW</b></span></p>
   </div>
 </header>
 
-<main>
+<nav class="catnav"><div class="wrap">
+  <a href="#main">主站</a>
+  <a href="#brand">品牌门户与工作坊</a>
+  <a href="#product">产品与业务平台</a>
+  <a href="#data">数据 · 量化 · 资讯</a>
+  <a href="#infra">研发与内部设施</a>
+  <a href="#down">受限 / 弃用 / 预留</a>
+</div></nav>
 
-<section class="section" id="public">
-  <div class="container">
-    <div class="section-head center">
-      <span class="kicker">对外产品</span>
-      <h2>面向客户与伙伴 · 全部在线</h2>
+<div class="wrap">
+
+<section id="main">
+  <h2 class="sec">主站</h2>
+  <p class="secdesc">对外第一入口，产品、案例、合作与下载的总门户。</p>
+  <div class="hero">
+    <div class="info">
+      <h3>玄龙 AI 手机 · 官方网站</h3>
+      <p>开机即用的 AI 营销手机：找客户、打电话、做内容、发圈跟进，一整条获客链路 24 小时替你跑。标准版签约即售，行业定制版开机就是你的品牌。www.aibay.asia 与 aibay.asia 同站。</p>
     </div>
-    <div class="site-grid">
-      <a class="site-card" href="https://www.aibay.asia/">
-        <div class="site-top"><b>官网首页</b><span class="st st-ok">✅ 在线</span><span class="site-domain">www.aibay.asia</span></div>
-        <p>玄龙 AI 手机与心光 AI 落地服务的官方门户。展示标准版与企业定制版 AI 营销手机，覆盖"找客户、打电话、做内容、发圈"整条获客链路。玄龙落地工作坊报名、三级伙伴体系申请与全部商务合作的起点。</p>
-      </a>
-      <a class="site-card" href="https://chai.aibay.asia/">
-        <div class="site-top"><b>小蛮腰·拆AI 工作坊</b><span class="st st-ok">✅ 在线</span><span class="site-domain">chai.aibay.asia</span></div>
-        <p>"拆的是 AI，拆为己用"的拆书帮系课程阵地。以拆书方法论拆解 AI 工具与工作流，帮助学员把 AI 真正用到自己的业务里。提供工作坊课程介绍与报名入口。</p>
-      </a>
-      <a class="site-card" href="https://coach.aibay.asia/">
-        <div class="site-top"><b>万丰·量AI 教练端</b><span class="st st-ok">✅ 在线</span><span class="site-domain">coach.aibay.asia</span></div>
-        <p>"量的是市场，立的是系统"的 AI 量化课程教练工作台。八大模块覆盖学员从建策略、跑模拟到复盘迭代的全流程。量化课程的教练陪伴与作业管理中枢。</p>
-      </a>
-      <a class="site-card" href="https://xinzhi.aibay.asia/">
-        <div class="site-top"><b>心智教育研究</b><span class="st st-ok">✅ 在线</span><span class="site-domain">xinzhi.aibay.asia</span></div>
-        <p>包丰源心智教育完整知识体系的结构化站点。沉淀心光学习力教练的方法论语料，服务家长咨询与教练获客。心光 AI 教练系统的对外知识阵地。</p>
-      </a>
-      <a class="site-card" href="https://yitang.aibay.asia/">
-        <div class="site-top"><b>一堂·AI FDE 工作坊</b><span class="st st-ok">✅ 在线</span><span class="site-domain">yitang.aibay.asia</span></div>
-        <p>以双三角方法论为主线的 3 小时 FDE 工作坊。带你当场跑通第一个前向部署（FDE）场景，把 Demo 变成能收尾款的方案。课程介绍与报名入口。</p>
-      </a>
-      <a class="site-card" href="https://dedao.aibay.asia/">
-        <div class="site-top"><b>得到·AI 手机工作坊</b><span class="st st-ok">✅ 在线</span><span class="site-domain">dedao.aibay.asia</span></div>
-        <p>把福马 AI 手机用起来的大众科普课程站。面向普通用户讲清 AI 手机的开箱、激活与日常使用。AI 手机交付体系的用户侧手册入口。</p>
-      </a>
-      <a class="site-card" href="https://hundun.aibay.asia/">
-        <div class="site-top"><b>混沌·AI 入企实战</b><span class="st st-ok">✅ 在线</span><span class="site-domain">hundun.aibay.asia</span></div>
-        <p>混沌学园 AI 创新领教 · 入企实战工作坊。把玄龙工作坊开进企业内训场景，预约与课程入口。企业版 AI 落地工作坊的主阵地。</p>
-      </a>
-      <a class="site-card" href="https://fde.aibay.asia/">
-        <div class="site-top"><b>FDE 工作坊（合并）</b><span class="st st-merge">↪ 301→hundun</span><span class="site-domain">fde.aibay.asia</span></div>
-        <p>与混沌工作坊共用同一站点，域名 301 合并跳转至 hundun.aibay.asia。老链接入口保留，内容以 hundun 为准。无需单独收藏本域名。</p>
-      </a>
-      <a class="site-card" href="https://dao.aibay.asia/">
-        <div class="site-top"><b>玄龙堂·道家文化</b><span class="st st-ok">✅ 在线</span><span class="site-domain">dao.aibay.asia</span></div>
-        <p>道家文化共修堂口，丹道实修与道商践行并重。玄龙文化线的共修活动与内容阵地。传统文化爱好者的共修入口。</p>
-      </a>
-    </div>
+    <div class="go"><a class="btn" href="https://www.aibay.asia/">进入主站 →</a></div>
   </div>
 </section>
 
-<section class="section" id="dev">
-  <div class="container">
-    <div class="section-head center">
-      <span class="kicker">研发与工程</span>
-      <h2>项目 · 代码 · 数据</h2>
-    </div>
-    <div class="site-grid">
-      <a class="site-card" href="https://gitea.aibay.asia/">
-        <div class="site-top"><b>Gitea 代码仓</b><span class="st st-ok">✅ 在线</span><span class="site-domain">gitea.aibay.asia</span></div>
-        <p>Loong Forge 自建代码仓，全部工程现场所在。仓库、发行包、文档、复盘一应俱全，Loong 与 kenyang 双组织资产中枢。官网安装包与发布资产均由本仓直发。</p>
-      </a>
-      <a class="site-card" href="https://gitea.aibay.asia/kanban/">
-        <div class="site-top"><b>一体看板</b><span class="lock">🔒</span><span class="st st-ok">✅ 在线</span><span class="site-domain">gitea…/kanban</span></div>
-        <p>告警、需求阶段、Bug 验证闸与工时 BI 的一屏聚合。跨项目工程状态的单一事实源。与禅道、Gitea 双向联动。</p>
-      </a>
-      <a class="site-card" href="https://zentao.aibay.asia/">
-        <div class="site-top"><b>禅道项目管理</b><span class="lock">🔒</span><span class="st st-ok">✅ 在线</span><span class="site-domain">zentao.aibay.asia</span></div>
-        <p>2026-09 自建的开源禅道，需求总账与术语权威。万丰云禅道数据已全量迁入（13 产品 / 11 项目 / 53 执行）。需求、任务、Bug 全流程管理入口。</p>
-      </a>
-      <a class="site-card" href="https://weknora.aibay.asia/">
-        <div class="site-top"><b>WeKnora 知识库</b><span class="lock">🔒</span><span class="st st-ok">✅ 在线</span><span class="site-domain">weknora.aibay.asia</span></div>
-        <p>企业知识库：文档检索问答 + ASR 转码代理。与 ima「万丰金融」知识库每小时自动同步。团队资料存取与检索问答的统一入口。</p>
-      </a>
-      <a class="site-card" href="https://quant.aibay.asia/">
-        <div class="site-top"><b>量化平台·实盘</b><span class="lock">🔒</span><span class="st st-ok">✅ 在线</span><span class="site-domain">quant.aibay.asia</span></div>
-        <p>QuantDinger 量化交易系统实盘主实例。多策略轮动运行，收盘自动结算出日报。策略迭代零人工值守。</p>
-      </a>
-      <a class="site-card" href="https://quantm.aibay.asia/">
-        <div class="site-top"><b>量化平台·模拟</b><span class="lock">🔒</span><span class="st st-ok">✅ 在线</span><span class="site-domain">quantm.aibay.asia</span></div>
-        <p>QuantDinger 模拟盘实例，策略演练与验证环境。新策略先在模拟盘跑通再上实盘。移动端 H5 同站可用。</p>
-      </a>
-      <a class="site-card" href="https://stock.aibay.asia/">
-        <div class="site-top"><b>行情服务</b><span class="st st-ok">✅ 在线</span><span class="site-domain">stock.aibay.asia</span></div>
-        <p>stock-server 证券行情数据接口。为量化、投研与日报供数的底层行情服务。dsa-web 前端同站提供。</p>
-      </a>
-      <a class="site-card" href="https://memo.aibay.asia/">
-        <div class="site-top"><b>备忘速记 / 资讯简报</b><span class="st st-ok">✅ 在线</span><span class="site-domain">memo.aibay.asia</span></div>
-        <p>MemoBot：每日资讯简报 + 轻量速记本二合一。资讯抓取、摘要、定时推送直达微信。全员零安装的轻量信息面板。</p>
-      </a>
-      <a class="site-card" href="https://api.aibay.asia/">
-        <div class="site-top"><b>API 网关</b><span class="st st-warn">⚠️ 502</span><span class="site-domain">api.aibay.asia</span></div>
-        <p>wanfengapp-web 统一接口入口，含 /needs/ 需求收集。回源 Loong:80。⚠️ 源站当前未起，暂 502，服务本体走 IP:8190 / :9000。</p>
-      </a>
-      <a class="site-card" href="https://dl.aibay.asia/">
-        <div class="site-top"><b>客户端下载</b><span class="st st-warn">⚠️ 502</span><span class="site-domain">dl.aibay.asia</span></div>
-        <p>APK / 桌面端安装包、历史版本与更新清单的静态下载目录。⚠️ 与 API 网关同源站（Loong:80），暂 502。下载可暂走官网下载区或 Gitea Releases。</p>
-      </a>
-    </div>
+<section id="brand">
+  <h2 class="sec">品牌门户与工作坊</h2>
+  <p class="secdesc">心光教练课程体系与各行业 AI 落地工作坊的对外页面。</p>
+  <div class="grid">
+    <a class="card" href="https://dao.aibay.asia/"><div class="row1"><span class="dom">dao<small>.aibay.asia</small></span><span class="pill ok">在线</span></div><div class="name">玄龙堂</div><div class="desc">人设签名、玄龙卡与玄龙纹查看。</div></a>
+    <a class="card" href="https://xinzhi.aibay.asia/"><div class="row1"><span class="dom">xinzhi<small>.aibay.asia</small></span><span class="pill ok">在线</span></div><div class="name">心智教育</div><div class="desc">重新认识自己，重新教育孩子。</div></a>
+    <a class="card" href="https://chai.aibay.asia/"><div class="row1"><span class="dom">chai<small>.aibay.asia</small></span><span class="pill ok">在线</span></div><div class="name">拆AI工作坊</div><div class="desc">人人可用，人人用好 AI。</div></a>
+    <a class="card" href="https://coach.aibay.asia/"><div class="row1"><span class="dom">coach<small>.aibay.asia</small></span><span class="pill ok">在线</span></div><div class="name">量AI · 自我升级课程</div><div class="desc">心光教练的自我升级课程体系。</div></a>
+    <a class="card" href="https://hundun.aibay.asia/"><div class="row1"><span class="dom">hundun<small>.aibay.asia</small></span><span class="pill ok">在线</span></div><div class="name">心光教练 × 混沌学园</div><div class="desc">入企工作坊落地页，含需求收集 API。</div></a>
+    <a class="card" href="https://fde.aibay.asia/"><div class="row1"><span class="dom">fde<small>.aibay.asia</small></span><span class="pill jump">301 跳转</span></div><div class="name">FDE 旧域名</div><div class="desc">原 FDE 工作坊域名，已 301 保活至 hundun。</div></a>
+    <a class="card" href="https://yitang.aibay.asia/"><div class="row1"><span class="dom">yitang<small>.aibay.asia</small></span><span class="pill ok">在线</span></div><div class="name">一堂 FDE 工作坊</div><div class="desc">一堂专场 FDE 工作坊页面。</div></a>
+    <a class="card" href="https://dedao.aibay.asia/"><div class="row1"><span class="dom">dedao<small>.aibay.asia</small></span><span class="pill ok">在线</span></div><div class="name">得到 · AI 手机工作坊</div><div class="desc">得到专场工作坊静态站。</div></a>
   </div>
 </section>
 
-<section class="section" id="internal">
-  <div class="container">
-    <div class="section-head center">
-      <span class="kicker">内部服务</span>
-      <h2>运营 · 业务 · 节点面板</h2>
-    </div>
-    <div class="site-grid">
-      <a class="site-card" href="https://sales.aibay.asia/">
-        <div class="site-top"><b>销售工作台</b><span class="st st-new">NEW</span><span class="lock">🔒</span><span class="st st-ok">✅ 在线</span><span class="site-domain">sales.aibay.asia</span></div>
-        <p>2026-11-17 上线的销售专用工作台（首役：广州水产客户开发）。客户跟进表 + 话术手册 + 行动清单三合一，手机优先。跟进数据各存各手机浏览器，随时导出 CSV 汇总。</p>
-      </a>
-      <a class="site-card" href="https://dopenclaw.aibay.asia/">
-        <div class="site-top"><b>道虾运营台</b><span class="lock">🔒</span><span class="st st-ok">✅ 在线</span><span class="site-domain">dopenclaw.aibay.asia</span></div>
-        <p>道虾节点（广州腾讯云）的运营入口。CTA 打点统计 /t/、教练灾备 /coach/。兼作 8787–8799 系列内部服务的分流门面。</p>
-      </a>
-      <a class="site-card" href="https://kyc.aibay.asia/">
-        <div class="site-top"><b>对公 KYC 工作台</b><span class="lock">🔒</span><span class="st st-ok">✅ 在线</span><span class="site-domain">kyc.aibay.asia</span></div>
-        <p>企业客户尽职调查（KYC）流程系统。登录后完成尽调表单、材料与审核流。对公合作前的合规前置环节。</p>
-      </a>
-      <a class="site-card" href="https://xlt.aibay.asia/">
-        <div class="site-top"><b>讯龙腾节点</b><span class="lock">🔒</span><span class="st st-ok">✅ 在线</span><span class="site-domain">xlt.aibay.asia</span></div>
-        <p>讯龙腾内部节点的域名门牌。实际落到道虾 43110 opencode 工作台，Basic 认证进入。内部算力节点的常驻入口之一。</p>
-      </a>
-      <a class="site-card" href="https://lhermes.aibay.asia/">
-        <div class="site-top"><b>量马节点</b><span class="lock">🔒</span><span class="st st-ok">✅ 在线</span><span class="site-domain">lhermes.aibay.asia</span></div>
-        <p>量马节点（硅谷·腾讯云）的 Loong 工作台入口。海外算力节点，Basic 认证进入 opencode web。出海与海外时段任务的承接端。</p>
-      </a>
-      <a class="site-card" href="https://xhermes.aibay.asia/">
-        <div class="site-top"><b>心马节点</b><span class="lock">🔒</span><span class="st st-ok">✅ 在线</span><span class="site-domain">xhermes.aibay.asia</span></div>
-        <p>心马节点（广州·腾讯云）双入口：拆约 API(:3002) + Loong 工作台。根路径 Basic 认证，/health 走 43110。拆约业务与广州算力的域名门面。</p>
-      </a>
-      <a class="site-card" href="https://khermes.aibay.asia/">
-        <div class="site-top"><b>K马节点</b><span class="st st-warn">⚠️ 未通</span><span class="site-domain">khermes.aibay.asia</span></div>
-        <p>K马节点（腾讯云广州 123.207.54.63），11-09 新入列。身份与公钥尚待核对，服务与防火墙未打通。⚠️ 暂不可访问，待节点验收后开放。</p>
-      </a>
-      <a class="site-card" href="https://wechat.aibay.asia/">
-        <div class="site-top"><b>微信节点 VNC</b><span class="lock">🔒</span><span class="st st-warn">⚠️ 拦截</span><span class="site-domain">wechat.aibay.asia</span></div>
-        <p>公众号运营机（39.96.90.50）的远程桌面入口，websockify :6082。域名指阿里云 IP 触发备案拦截，公网不可达。⚠️ 运维请用 IP:6082 直连。</p>
-      </a>
-    </div>
+<section id="product">
+  <h2 class="sec">产品与业务平台</h2>
+  <p class="secdesc">正在交付或演示中的业务系统，多为正式产品形态。</p>
+  <div class="grid">
+    <a class="card hot" href="https://paper.aibay.asia/"><div class="row1"><span class="dom">paper<small>.aibay.asia</small></span><span class="pill ok">在线</span></div><div class="name">墨砚 AI 论文平台</div><div class="desc">智能、专业、可靠的学术论文 AI 辅助平台，含小墨 AI 助手。</div></a>
+    <a class="card hot" href="https://textbook.aibay.asia/"><div class="row1"><span class="dom">textbook<small>.aibay.asia</small></span><span class="pill ok">在线</span></div><div class="name">墨匠 AI 职教教材平台</div><div class="desc">教材编写与出版一体化平台（2026-11-24 上线）。</div></a>
+    <a class="card hot" href="https://kyc.aibay.asia/"><div class="row1"><span class="dom">kyc<small>.aibay.asia</small></span><span class="pill auth">需登录</span></div><div class="name">对公 KYC 智能尽调平台</div><div class="desc">权威数据 · 企业风控 · 智能分析。</div></a>
+    <a class="card hot" href="https://sxdemo.aibay.asia/"><div class="row1"><span class="dom">sxdemo<small>.aibay.asia</small></span><span class="pill auth">需登录</span></div><div class="name">普惠金融授信调查报告生成器</div><div class="desc">工行中小企业主客群演示，「三品三表三流」尽调方法论。</div></a>
+    <a class="card" href="https://khermes.aibay.asia/"><div class="row1"><span class="dom">khermes<small>.aibay.asia</small></span><span class="pill ok">在线</span></div><div class="name">AIBay 手机进销存</div><div class="desc">手机销售进销存管理系统。</div></a>
+    <a class="card" href="https://sales.aibay.asia/"><div class="row1"><span class="dom">sales<small>.aibay.asia</small></span><span class="pill auth">需登录</span></div><div class="name">销售工作台</div><div class="desc">广州水产客户开发专用销售工作台。</div></a>
   </div>
 </section>
 
-<section class="section" id="reserved">
-  <div class="container">
-    <div class="section-head center">
-      <span class="kicker">受限 · 预留</span>
-      <h2>备案拦截组 · 域名暂不可用</h2>
-    </div>
-    <p class="legend" style="margin-bottom:14px">aibay.asia 备案接入在腾讯云，以下解析指向阿里云机器，公网访问被边缘拦截（HTTP 403 / HTTPS RST）。服务本体均以 IP:端口 可达，或等新备案域名规划后恢复。</p>
-    <div class="site-grid">
-      <a class="site-card" href="https://paper.aibay.asia/">
-        <div class="site-top"><b>墨砚·AI 论文工作台</b><span class="st st-warn">⚠️ 拦截</span><span class="site-domain">paper.aibay.asia</span></div>
-        <p>论文写作三角色工作台：选题、成稿、润色三段流水线。部署于 Xuan 静态目录。⚠️ 域名被备案拦截，待新备案域名后恢复公网访问。</p>
-      </a>
-      <a class="site-card">
-        <div class="site-top"><b>Loong 主力节点</b><span class="st st-warn">⚠️ 拦截</span><span class="site-domain">loong.aibay.asia</span></div>
-        <p>Loong 主力节点（阿里云深圳·16核64G）的域名门牌。域名被备案拦截，公网不可用。服务一律走 IP:端口 或道虾反代域名。</p>
-      </a>
-      <a class="site-card">
-        <div class="site-top"><b>Xuan 玄龙主力</b><span class="st st-warn">⚠️ 拦截</span><span class="site-domain">xuan.aibay.asia</span></div>
-        <p>Xuan 部署主力（上海·16核32G）的域名门牌。域名被备案拦截，暂不可用。节点服务以 IP 直连（:8800 xwt-trader / :8303 孵化平台 / :9901 ZCode 等）。</p>
-      </a>
-      <a class="site-card">
-        <div class="site-top"><b>QuantDinger·Xuan</b><span class="st st-off">· 停用</span><span class="site-domain">qd.aibay.asia</span></div>
-        <p>Xuan 侧 QuantDinger 实例的门牌（:8890/:7777）。容器未起 + 备案拦截双重原因不可用。量化服务以 IP:7777 直连或走 quant.aibay.asia（Loong 侧）。</p>
-      </a>
-      <a class="site-card">
-        <div class="site-top"><b>Paperclip（退役）</b><span class="st st-off">· 退役</span><span class="site-domain">pc.aibay.asia</span></div>
-        <p>Paperclip 项目门牌（原 Xuan :3100）。服务已于 10-30 卸载，域名保留但为死链。历史项目留档门牌。</p>
-      </a>
-      <a class="site-card">
-        <div class="site-top"><b>Demo 门牌</b><span class="st st-off">· 留档</span><span class="site-domain">demo.aibay.asia</span></div>
-        <p>演示用途门牌，指向 Loong。备案拦截不可公网访问。演示内容请走 api / gitea 等反代入口。</p>
-      </a>
-      <a class="site-card">
-        <div class="site-top"><b>SX Demo 门牌</b><span class="st st-off">· 留档</span><span class="site-domain">sxdemo.aibay.asia</span></div>
-        <p>SX 演示门牌，指向 Xuan。备案拦截不可公网访问。留档保留，待新域名规划。</p>
-      </a>
-      <a class="site-card">
-        <div class="site-top"><b>知诚工作台</b><span class="st st-warn">⚠️ 拦截</span><span class="site-domain">zhicheng.aibay.asia</span></div>
-        <p>知诚 AI 工作台（Xuan 静态 /opt/zhicheng-ai/web）。域名被备案拦截，公网不可用。待新备案域名后一并恢复。</p>
-      </a>
-    </div>
+<section id="data">
+  <h2 class="sec">数据 · 量化 · 资讯</h2>
+  <p class="secdesc">行情、量化交易、每日简报与万丰 Private CIO 服务。</p>
+  <div class="grid">
+    <a class="card" href="https://stock.aibay.asia/"><div class="row1"><span class="dom">stock<small>.aibay.asia</small></span><span class="pill ok">在线</span></div><div class="name">dsa-web 行情</div><div class="desc">行情数据 Web 服务。</div></a>
+    <a class="card" href="https://quant.aibay.asia/"><div class="row1"><span class="dom">quant<small>.aibay.asia</small></span><span class="pill ok">在线</span></div><div class="name">QuantDinger · 家庭量化</div><div class="desc">一套策略，一个入口，玩转所有市场（实例一）。</div></a>
+    <a class="card" href="https://quantm.aibay.asia/"><div class="row1"><span class="dom">quantm<small>.aibay.asia</small></span><span class="pill ok">在线</span></div><div class="name">QuantDinger · 实例二</div><div class="desc">QuantDinger 家庭量化第二部署实例。</div></a>
+    <a class="card" href="https://memo.aibay.asia/"><div class="row1"><span class="dom">memo<small>.aibay.asia</small></span><span class="pill ok">在线</span></div><div class="name">MemoBot 资讯简报</div><div class="desc">每日资讯摘要与备忘机器人。</div></a>
+    <a class="card" href="https://api.aibay.asia/"><div class="row1"><span class="dom">api<small>.aibay.asia</small></span><span class="pill auth">鉴权</span></div><div class="name">万丰 Private CIO · API 网关</div><div class="desc">统一 API 入口（/needs、/api、/v1、/api/billing 分路由）。</div></a>
+    <a class="card" href="https://dl.aibay.asia/"><div class="row1"><span class="dom">dl<small>.aibay.asia</small></span><span class="pill auth">鉴权</span></div><div class="name">万丰 Private CIO · 下载站</div><div class="desc">私有 CIO 客户端与资料下载。</div></a>
   </div>
 </section>
 
-<section class="section" id="direct">
-  <div class="container">
-    <div class="section-head center">
-      <span class="kicker">服务器直连</span>
-      <h2>Loong / Xuan 开放服务（IP 直连）</h2>
-    </div>
-    <div class="site-grid">
-      <a class="site-card" href="http://39.108.95.179:8000/">
-        <div class="site-top"><b>DSA 工作台</b><span class="site-domain">loong:8000</span></div>
-        <p>项目评审 · 软件造价审核。财政评审工作台主入口，与 stock 同机。</p>
-      </a>
-      <a class="site-card" href="http://39.108.95.179:8010/">
-        <div class="site-top"><b>资讯简报</b><span class="site-domain">loong:8010</span></div>
-        <p>每日资讯简报服务。memo.aibay.asia 的本体端口。</p>
-      </a>
-      <a class="site-card" href="http://39.108.95.179:8765/">
-        <div class="site-top"><b>万丰智能投研</b><span class="site-domain">loong:8765</span></div>
-        <p>金融智能投研平台。万丰 Private CIO 的研究引擎。</p>
-      </a>
-      <a class="site-card" href="http://39.108.95.179:9000/">
-        <div class="site-top"><b>万丰 Private CIO</b><span class="site-domain">loong:9000</span></div>
-        <p>Private CIO 主站。数据与主服务入口。</p>
-      </a>
-      <a class="site-card" href="http://39.108.95.179:9031/">
-        <div class="site-top"><b>舆情智察</b><span class="site-domain">loong:9031</span></div>
-        <p>舆情监测 · 万丰 Private CIO 组件。</p>
-      </a>
-      <a class="site-card" href="http://39.108.95.179:9100/">
-        <div class="site-top"><b>000 入会</b><span class="site-domain">loong:9100</span></div>
-        <p>万丰 Private CIO · 000 入会页。</p>
-      </a>
-      <a class="site-card" href="http://39.108.95.179:9101/">
-        <div class="site-top"><b>今日交互 Demo</b><span class="site-domain">loong:9101</span></div>
-        <p>万丰 Private CIO · 每日交互演示。</p>
-      </a>
-      <a class="site-card" href="http://39.108.95.179:43110/">
-        <div class="site-top"><b>opencode 工作台</b><span class="lock">🔒</span><span class="site-domain">loong:43110</span></div>
-        <p>Loong 侧 opencode web，Basic 认证。</p>
-      </a>
-      <a class="site-card" href="http://139.196.125.248:9901/">
-        <div class="site-top"><b>ZCode</b><span class="site-domain">xuan:9901</span></div>
-        <p>Xuan 侧 ZCode 服务。</p>
-      </a>
-    </div>
+<section id="infra">
+  <h2 class="sec">研发与内部设施</h2>
+  <p class="secdesc">团队自用基础设施，均需账号或 BasicAuth 鉴权。</p>
+  <div class="grid">
+    <a class="card" href="https://gitea.aibay.asia/"><div class="row1"><span class="dom">gitea<small>.aibay.asia</small></span><span class="pill ok">在线</span></div><div class="name">Loong Forge</div><div class="desc">私有 Gitea Git 服务，支持大仓库推送。</div></a>
+    <a class="card" href="https://zentao.aibay.asia/"><div class="row1"><span class="dom">zentao<small>.aibay.asia</small></span><span class="pill auth">需登录</span></div><div class="name">禅道项目管理</div><div class="desc">研发项目管理与缺陷跟踪。</div></a>
+    <a class="card" href="https://weknora.aibay.asia/"><div class="row1"><span class="dom">weknora<small>.aibay.asia</small></span><span class="pill ok">在线</span></div><div class="name">WeKnora 知识库</div><div class="desc">团队知识库检索与管理。</div></a>
+    <a class="card" href="https://xhermes.aibay.asia/"><div class="row1"><span class="dom">xhermes<small>.aibay.asia</small></span><span class="pill auth">需登录</span></div><div class="name">心光马 · Hermes 工作台</div><div class="desc">心光教练工作台主机入口。</div></a>
+    <a class="card" href="https://lhermes.aibay.asia/"><div class="row1"><span class="dom">lhermes<small>.aibay.asia</small></span><span class="pill auth">需登录</span></div><div class="name">量马 · Hermes 工作台</div><div class="desc">量马主机 Hermes 工作台入口。</div></a>
+    <a class="card" href="https://dopenclaw.aibay.asia/"><div class="row1"><span class="dom">dopenclaw<small>.aibay.asia</small></span><span class="pill auth">需登录</span></div><div class="name">道虾 · 反代枢纽</div><div class="desc">CTA 打点、各平台 AI 助手轻代理与灾备入口。</div></a>
   </div>
 </section>
 
-</main>
-
-<footer class="footer">
-  <div class="container footer-inner">
-    <div class="footer-brand">
-      <img src="assets/loong-logo.svg" alt="Loong" class="footer-logo">
-      <div><b>玄龙 AI 落地</b><span>站点导航 · 一站直达 · 35 子域全量登记（2026-11-17）</span></div>
-    </div>
-    <div class="footer-meta"><span>© 2026 广州心光信息咨询有限公司</span><span>554176937@qq.com</span></div>
+<section id="down">
+  <h2 class="sec">受限 / 弃用 / 预留</h2>
+  <p class="secdesc">因 ICP 备案接入限制、业务调整或规划预留，当前不可直接访问或已跳转，保留档案备查。</p>
+  <div class="grid">
+    <div class="card"><div class="row1"><span class="dom">xuan<small>.aibay.asia</small></span><span class="pill down">ICP 拦截</span></div><div class="name">Xuan 服务器入口</div><div class="desc">指向阿里云主机，域名访问被 ICP 拦截；业务经道虾反代对外。</div></div>
+    <div class="card"><div class="row1"><span class="dom">wechat<small>.aibay.asia</small></span><span class="pill down">ICP 拦截</span></div><div class="name">微信服务旧入口</div><div class="desc">阿里云主机微信相关服务，域名访问被拦截。</div></div>
+    <div class="card"><div class="row1"><span class="dom">qd<small>.aibay.asia</small></span><span class="pill down">ICP 拦截</span></div><div class="name">渠道旧站</div><div class="desc">原渠道站点，域名访问被拦截，解析保留。</div></div>
+    <div class="card"><div class="row1"><span class="dom">pc<small>.aibay.asia</small></span><span class="pill down">ICP 拦截</span></div><div class="name">PC 旧站</div><div class="desc">原 PC 站点，域名访问被拦截，解析保留。</div></div>
+    <div class="card"><div class="row1"><span class="dom">zhicheng<small>.aibay.asia</small></span><span class="pill down">ICP 拦截</span></div><div class="name">职成平台</div><div class="desc">职成平台（小职 AI 助手所属），域名访问被拦截。</div></div>
+    <a class="card" href="http://39.108.95.179/"><div class="row1"><span class="dom">demo<small>.aibay.asia</small></span><span class="pill jump">已弃用</span></div><div class="name">万丰 Private CIO 演示旧域</div><div class="desc">已弃用，301 汇入 IP 正式演示入口。</div></a>
+    <div class="card"><div class="row1"><span class="dom">loong<small>.aibay.asia</small></span><span class="pill down">内部受限</span></div><div class="name">Loong 服务后端</div><div class="desc">Loong 服务端入口，内部使用，公网访问受限。</div></div>
+    <div class="card"><div class="row1"><span class="dom">xlt<small>.aibay.asia</small></span><span class="pill down">预留</span></div><div class="name">预留子域</div><div class="desc">DNS 解析已配置，尚未部署站点内容。</div></div>
   </div>
+</section>
+
+<footer>
+  AIBay.asia 站点导航 · 共收录 35 个子域名（不含内部项目域）<br>
+  状态说明：在线 = 直接可访问；需登录 / 鉴权 = 站点正常但需账号；ICP 拦截 = 域名指向未备案接入的阿里云主机被拦截；301 跳转 = 旧域名保活。<br>
+  最近更新：2026-11-24 · 由 Loong 自动巡检生成
 </footer>
 
+</div>
 </body>
 </html>
